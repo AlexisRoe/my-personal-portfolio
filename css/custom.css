@@ -9963,4 +9963,9 @@ h3 {
   border-radius: 0.25rem;
 }
 
+.receptbox {
+  min-width: 100%;
+  min-height: 250px;
+}
+
 /*# sourceMappingURL=custom.css.map */
