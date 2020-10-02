@@ -1,9 +1,7 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-/* $body-bg: #000;
-$body-color: white;
-$primary: hotpink;
-$font-family-base: Arial; */
+$body-bg: #edf0c7;
+$border-radius: 1rem;
 
 // Add you custom CSS
 
@@ -14,13 +12,7 @@ $font-family-base: Arial; */
 // Include all Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-// Bootstrap Veriablen
-$body-bg: #edf0c7;
-
 // Eigene Regeln
-.body-bg {
-    background-color: #edf0c7;
-}
 
 .bg-nav {
     background-color: #82e747;
@@ -42,4 +34,49 @@ $body-bg: #edf0c7;
 
 .txt-cover {
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+.card--about-me__villian {
+    background-image: url('/images/villian.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.25rem;
+}
+
+.card--about-me__home {
+    background-image: url('/images/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.25rem;
+}
+
+.card--about-me__relatives {
+    background-image: url('/images/relatives.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.25rem;
+}
+
+.card--about-me__myself {
+    background-image: url('/images/ingredients.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.25rem;
+}
+
+.card--about-me__farmer {
+  background-image: url('/images/bauer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  border-radius: 0.25rem;
 }
