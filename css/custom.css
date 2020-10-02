@@ -9985,4 +9985,12 @@ h3 {
   border-radius: 0.25rem;
 }
 
+.recept-link {
+  color: black;
+}
+
+.recept-link:hover {
+  color: black;
+}
+
 /*# sourceMappingURL=custom.css.map */
