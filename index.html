@@ -40,39 +40,40 @@
             <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
                 <section
                     role="main"
-                    class="inner cover cover-karotte p-3 vw-100 vh-100 d-flex align-items-start flex-column justify-content-center"
+                    class="inner cover cover-karotte vw-100 vh-100 d-flex align-items-start flex-column justify-content-center"
                 >
-                    <h1 class="cover-heading text-white txt-cover">
+                    <h1 class="cover-heading text-white txt-cover mx-5">
                         Karotten sind nicht nur gut für Hasen
                     </h1>
-                    <p class="lead m-2 w-50 text-white txt-cover">
+                    <p class="lead m-2 w-50 text-white txt-cover mx-5">
                         Süßlich, Knackig, Gesund. Das weiß doch jeder. In uns steckt so viel mehr
                         als man von außen sieht. Voller Vitamine und Mineralstoffe. Und ich, ich
                         gehöre dazu.
                     </p>
-                    <p class="lead">
+                    <p class="lead mx-5">
                         <a href="#about_me" class="btn btn-lg btn-secondary btn-karotte border-0"
                             >Lern mich kennen</a
                         >
                     </p>
                 </section>
             </div>
+            <!-- Ende Cover -->
         </header>
 
         <main>
             <!-- About Me -->
-            <div class="cover-container" id="about_me">
-                <div class="row mx-3 my-3 mt-5">
+            <div class="cover-container mt-5" id="about_me">
+                <div class="row mx-5">
                     <div class="h2">About me</div>
                 </div>
 
-                <div class="row mx-3 my-3 w-75 mb-5">
+                <div class="row w-75 mx-5">
                     Ihr wollt mich näher kennenlernen? Keine Sorge, hier seid ihr genau richtig.
                     Macht es euch gemütlich, nehmt euch einen Kaffee, es kann ein wenig dauern.
                 </div>
 
                 <!-- cards -->
-                <div class="row mx-5 my-3">
+                <div class="row mx-5 mt-5">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <div class="card--about-me__villian"></div>
@@ -145,22 +146,25 @@
                 </div>
             </div>
             <!-- Ende about me -->
+
             <!-- my recept -->
-            <div class="cover-container mb-5 receptbox" id="recept">
-                <div class="row"></div>
-
-                <div class="row mx-3 my-3 mt-5">
-                    <div class="h2">Lieblingsrezept</div>
+            <div class="cover-container mt-5" id="recept">
+                <div class="cover-container d-flex w-100 h-100 mx-auto flex-column cover-cake">
+                    <section
+                        role="main"
+                        class="inner cover vw-100 vh-100 d-flex align-items-start flex-column justify-content-center"
+                    >
+                        <h2 class="cover-heading text-white txt-cover mx-5">Lieblingsrezept</h2>
+                        <p class="lead m-2 w-50 text-white txt-cover mx-5">
+                            Das muss gesagt werden. 😤 Ich hasse euch. Warum nur? Warum wollt ihr
+                            mich essen. Aber na gut wenn es denn sein muss. Das Rezept stammt
+                            übrigens von Rolfs Oma. Lasst es euch im Hals stecken. 😒
+                        </p>
+                    </section>
                 </div>
 
-                <div class="row mx-3 my-3 w-75 mb-5">
-                    Das muss gesagt werden. 😤 Ich hasse euch. Warum nur? Warum wollt ihr mich
-                    essen. Aber na gut wenn es denn sein muss. Das Rezept stammt übrigens von Rolfs
-                    Oma. Lasst es euch im Hals stecken. 😒
-                </div>
-
-                <div class="row mx-5 my-3 mt-5">
-                    <div class="card p-2">
+                <div class="row mt-5 mb-5">
+                    <div class="container-fluid p-2 mx-5 bg-white rbox">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a
@@ -197,55 +201,176 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div
-                                class="tab-pane fade show active"
+                                class="tab-pane fade show active p-3"
                                 id="recept-ingr"
                                 role="tabpanel"
                                 aria-labelledby="nav-home-tab"
                             >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                                vitae! Sequi id ab maiores obcaecati expedita nulla! Itaque
-                                recusandae minima corrupti beatae autem corporis modi vitae
-                                similique optio reiciendis animi laudantium ut libero fugit eum,
-                                fuga porro hic suscipit quis aut? Ratione animi unde ut esse rerum,
-                                nihil voluptas inventore magni est voluptatem, molestias eligendi!
-                                Nobis expedita sed error nulla rerum voluptatem totam architecto
-                                perspiciatis, dolorem placeat nam earum nostrum sunt neque, ipsa
-                                modi itaque veniam. Neque, odio. Recusandae, aliquid blanditiis
-                                corporis adipisci fugit repudiandae voluptatem tempore in incidunt
-                                deleniti aliquam ea quos? Fugiat explicabo maiores quod nisi illum
-                                repudiandae praesentium alias ipsa quam libero aut et voluptas natus
-                                enim, pariatur fugit? Sint non nisi explicabo ex suscipit
-                                praesentium nostrum culpa itaque, provident, distinctio autem
-                                excepturi quisquam ducimus!
+                                <table class="table table-striped receptbox">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Menge</th>
+                                            <th scope="col">Zutaten</th>
+                                            <th scope="col">Menge</th>
+                                            <th scope="col">Zutaten</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">275 g</th>
+                                            <td>Möhren</td>
+                                            <th scope="row">225 g</th>
+                                            <td>Zucker</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">75 g</th>
+                                            <td>Walnusskerne</td>
+                                            <th scope="row">1</th>
+                                            <td>Schale von Bio Zitrone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Eier (Größe M)</td>
+                                            <th scope="row">40 g</th>
+                                            <td>Mehl</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">300 g</th>
+                                            <td>gemahlene Mandeln</td>
+                                            <th scope="row">Salz</th>
+                                            <td>1 Prise</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">100 g</th>
+                                            <td>Mascarpone</td>
+                                            <th scope="row">200 g</th>
+                                            <td>Doppelrahm Frischkäse</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">75 g</th>
+                                            <td>Puderzucker</td>
+                                            <th scope="row">1</th>
+                                            <td>Limettenzesten (Fett)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- Alte Tabelle löschen
+
+                                table class="table table-striped recept-table-l">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Menge</th>
+                                            <th scope="col">Zutaten</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">275 g</th>
+                                            <td>Möhren</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">75 g</th>
+                                            <td>Walnusskerne</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Eier (Größe M)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">300 g</th>
+                                            <td>gemahlene Mandeln</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">100 g</th>
+                                            <td>Mascarpone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">75 g</th>
+                                            <td>Puderzucker</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table table-striped recept-table">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th scope="col">
+                                                <span class="recept-txt">...</span>
+                                            </th>
+                                            <th scope="col">
+                                                <span class="recept-txt">...</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">225 g</th>
+                                            <td>Zucker</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Schale von Bio Zitrone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">40 g</th>
+                                            <td>Mehl</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Salz</th>
+                                            <td>1 Prise</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">200 g</th>
+                                            <td>Doppelrahm Frischkäse</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Limettenzesten (Fett)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>-->
                             </div>
                             <div
-                                class="tab-pane fade"
+                                class="tab-pane fade p-3"
                                 id="recept-cook"
                                 role="tabpanel"
                                 aria-labelledby="nav-profile-tab"
                             >
-                                Dolor sit amet consectetur adipisicing elit. Est atque ab eius
-                                maxime harum minima id in repudiandae iure recusandae. Id
-                                dignissimos minus culpa ipsum officia similique atque dolor! Ipsa
-                                dolor nam animi quaerat veritatis. Aut incidunt voluptate sit rerum
-                                laborum modi! Soluta distinctio neque tempora aperiam atque nesciunt
-                                alias! Natus enim aliquid odit repellat nostrum. Porro, debitis
-                                autem facilis at magni enim natus. Sequi, ipsa illo molestiae
-                                incidunt fuga id maiores possimus? Reprehenderit possimus itaque
-                                magni, voluptatibus esse ex alias dignissimos labore aut, eius
-                                dolores laboriosam, ut incidunt? Necessitatibus ex ea dignissimos id
-                                error distinctio quas vel repudiandae nulla modi praesentium
-                                molestias deserunt eveniet expedita ratione, illo optio aspernatur
-                                ad nihil? Consequuntur minus iste enim. Nemo culpa recusandae
-                                corporis quas iure consequatur sint, totam cum quo obcaecati.
+                                <p>Zubereitungszeit: 90 Minuten</p>
+                                <p>
+                                    1. Möhren schälen und grob raspeln. Walnüsse grob hacken. Eier
+                                    trennen. Eigelbe, 75 g Zucker und Zitronenschale mit den
+                                    Schneebesen des Handrührgrätes dick schaumig aufschlagen.
+                                    Möhrenraspel unterheben. Mehl, Mandeln und Walnüsse mischen,
+                                    unter die Eiercreme rühren. Eiweiß steif schlagen, Salz und 150
+                                    g Zucker dabei einrieseln lassen. Unter die Masse heben.
+                                </p>
+                                <p>
+                                    2. Masse in eine gefettete quadratische Springform (24 x 24 cm)
+                                    geben und glatt streichen. Im vorgeheizten Backofen (E-Herd: 175
+                                    °C/ Umluft: 150 °C/ Gas: s. Hersteller) ca. 50 Minuten backen.
+                                    Aus dem Ofen nehmen und auf einem Kuchengitter auskühlen lassen.
+                                </p>
+                                <p>
+                                    3. Kuchen aus der Form lösen. Mascarpone, Frischkäse,
+                                    Puderzucker und Limettenschale mit den Schneebesen des
+                                    Handrührgerätes aufschlagen. Auf den Kuchen geben und
+                                    verstreichen. Mit Limettenzesten bestreut servieren.
+                                </p>
                             </div>
                             <div
-                                class="tab-pane fade"
+                                class="tab-pane fade p-3"
                                 id="recept-mat"
                                 role="tabpanel"
                                 aria-labelledby="nav-contact-tab"
                             >
-                                1 Stück ca. : 310 kcal | 1300 kJ | 8 g Eiweiß | 21 g Fett | 23 g Kohlenhydrate
+                                1 Stück ca. : 310 kcal | 1300 kJ | 8 g Eiweiß | 21 g Fett | 23 g
+                                Kohlenhydrate
                             </div>
                         </div>
                     </div>
