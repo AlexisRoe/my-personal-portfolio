@@ -1,9 +1,7 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-/* $body-bg: #000;
-$body-color: white;
-$primary: hotpink;
-$font-family-base: Arial; */
+$body-bg: #edf0c7;
+$border-radius: 1rem;
 
 // Add you custom CSS
 
@@ -14,13 +12,7 @@ $font-family-base: Arial; */
 // Include all Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-// Bootstrap Veriablen
-$body-bg: #edf0c7;
-
 // Eigene Regeln
-.body-bg {
-    background-color: #edf0c7;
-}
 
 .bg-nav {
     background-color: #82e747;
