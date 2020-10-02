@@ -5,14 +5,19 @@ $body-color: white;
 $primary: hotpink;
 $font-family-base: Arial; */
 
-// Include all Bootstrap
-// @import "../node_modules/bootstrap/scss/bootstrap";
-
 // Add you custom CSS
 
 /* body {
   margin: 20px;
 } */
 
-// Eigener Code-Abschnitt
+// Include all Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Bootstrap Veriablen
 $body-bg: #edf0c7;
+
+// Eigene Regeln
+.bg-nav {
+    background-color: #82e747;
+}
