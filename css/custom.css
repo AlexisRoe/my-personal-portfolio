@@ -9900,8 +9900,30 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.body-bg {
+  background-color: #edf0c7;
+}
+
 .bg-nav {
   background-color: #82e747;
+}
+
+.txt-head {
+  color: #2e5a1c;
+}
+
+.btn-karotte {
+  background-color: #ff5c00;
+}
+
+.cover-karotte {
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.txt-cover {
+  text-shadow: 5px 5px 15px black;
 }
 
 /*# sourceMappingURL=custom.css.map */
