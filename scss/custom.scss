@@ -1,15 +1,18 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-$body-bg: #000;
+/* $body-bg: #000;
 $body-color: white;
 $primary: hotpink;
-$font-family-base: Arial;
+$font-family-base: Arial; */
 
 // Include all Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Add you custom CSS
 
-body {
+/* body {
   margin: 20px;
-}
+} */
+
+// Eigener Code-Abschnitt
+$body-bg: #edf0c7;
