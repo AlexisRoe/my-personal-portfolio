@@ -10,7 +10,6 @@
         <title>Maike Karotte</title>
     </head>
     <body>
-        <!-- Eigener Code -->
         <header>
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top">
@@ -59,7 +58,7 @@
 
         <main>
             <!-- About Me -->
-            <div class="cover-container mt-5" id="about_me">
+            <article class="cover-container mt-5" id="about_me">
                 <div class="row mx-5">
                     <div class="h2">About me</div>
                 </div>
@@ -141,12 +140,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- End Cards -->
+            </article>
             <!-- Ende about me -->
 
-            <!-- my recept -->
-            <div class="cover-container mt-5<!-- -->" id="recept">
-                <div class="cover-container d-flex w-100 h-100 mx-auto flex-column cover-cake">
+            <!-- Start Article recept  -->
+            <article class="cover-container mt-5" id="recept">
+                <div class="d-flex w-100 h-100 mx-auto flex-column cover-cake">
                     <section
                         role="main"
                         class="inner cover vw-100 vh-100 d-flex align-items-start flex-column justify-content-center"
@@ -157,164 +157,187 @@
                             mich essen. Aber na gut wenn es denn sein muss. Das Rezept stammt
                             übrigens von Rolfs Oma. Lasst es euch im Hals stecken. 😒
                         </p>
+                        <p class="lead mx-5">
+                            <a
+                                href="#karottenkuchen"
+                                class="btn btn-lg btn-secondary btn-karotte border-0"
+                                >Lass es backen</a
+                            >
+                        </p>
                     </section>
                 </div>
+                <!-- End Start Article recept -->
 
-                <div class="row mt-5 mb-5">
-                    <div class="container-fluid p-2 mx-5 bg-white rbox">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a
-                                    class="nav-link active recept-link"
-                                    id="nav-home-tab"
-                                    data-toggle="tab"
-                                    href="#recept-ingr"
-                                    role="tab"
-                                    aria-controls="nav-home"
-                                    aria-selected="true"
-                                    >Zutaten</a
+                <!-- rezeptur  -->
+                <div class="container my-5 .rbox" id="karottenkuchen">
+                    <h2>Karottenkuchen</h2>
+                    <div class="row">
+                        <div class="col-md-6 my-md-5">
+                            <img
+                                src="/images/recept.jpg"
+                                class="img-fluid w-100"
+                                alt="Responsive image"
+                            />
+                        </div>
+                        <div class="col-md-6">
+                            <nav>
+                                <div class="nav nav-tabs bg-white" id="nav-tab" role="tablist">
+                                    <a
+                                        class="nav-link active recept-link"
+                                        id="nav-home-tab"
+                                        data-toggle="tab"
+                                        href="#recept-ingr2"
+                                        role="tab"
+                                        aria-controls="nav-home"
+                                        aria-selected="true"
+                                        >Zutaten</a
+                                    >
+                                    <a
+                                        class="nav-link recept-link"
+                                        id="nav-profile-tab"
+                                        data-toggle="tab"
+                                        href="#recept-cook2"
+                                        role="tab"
+                                        aria-controls="nav-profile"
+                                        aria-selected="false"
+                                        >Zubereitung</a
+                                    >
+                                    <a
+                                        class="nav-link recept-link"
+                                        id="nav-contact-tab"
+                                        data-toggle="tab"
+                                        href="#recept-mat2"
+                                        role="tab"
+                                        aria-controls="nav-contact"
+                                        aria-selected="false"
+                                        >Inhaltsstoffe</a
+                                    >
+                                </div>
+                            </nav>
+                            <!-- table recept -->
+                            <div class="tab-content" id="nav-tabContent">
+                                <div
+                                    class="tab-pane fade show active p-3 bg-white"
+                                    id="recept-ingr2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav-home-tab"
                                 >
-                                <a
-                                    class="nav-link recept-link"
-                                    id="nav-profile-tab"
-                                    data-toggle="tab"
-                                    href="#recept-cook"
-                                    role="tab"
-                                    aria-controls="nav-profile"
-                                    aria-selected="false"
-                                    >Zubereitung</a
-                                >
-                                <a
-                                    class="nav-link recept-link"
-                                    id="nav-contact-tab"
-                                    data-toggle="tab"
-                                    href="#recept-mat"
-                                    role="tab"
-                                    aria-controls="nav-contact"
-                                    aria-selected="false"
-                                    >Inhaltsstoffe</a
-                                >
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div
-                                class="tab-pane fade show active p-3"
-                                id="recept-ingr"
-                                role="tabpanel"
-                                aria-labelledby="nav-home-tab"
-                            >
-                                <table class="table table-striped recept-table-l">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Menge</th>
-                                            <th scope="col">Zutaten</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">275 g</th>
-                                            <td>Möhren</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">75 g</th>
-                                            <td>Walnusskerne</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">5</th>
-                                            <td>Eier (Größe M)</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">300 g</th>
-                                            <td>gemahlene Mandeln</td>
-                                        </tr>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Menge</th>
+                                                <th scope="col">Zutaten</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">275 g</th>
+                                                <td>Möhren</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">75 g</th>
+                                                <td>Walnusskerne</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Eier (Größe M)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">300 g</th>
+                                                <td>gemahlene Mandeln</td>
+                                            </tr>
 
-                                        <tr>
-                                            <th scope="row">100 g</th>
-                                            <td>Mascarpone</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">75 g</th>
-                                            <td>Puderzucker</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">225 g</th>
-                                            <td>Zucker</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Schale von Bio Zitrone</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">40 g</th>
-                                            <td>Mehl</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Salz</th>
-                                            <td>1 Prise</td>
-                                        </tr>
+                                            <tr>
+                                                <th scope="row">100 g</th>
+                                                <td>Mascarpone</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">75 g</th>
+                                                <td>Puderzucker</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">225 g</th>
+                                                <td>Zucker</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Schale von Bio Zitrone</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">40 g</th>
+                                                <td>Mehl</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Salz</th>
+                                                <td>1 Prise</td>
+                                            </tr>
 
-                                        <tr>
-                                            <th scope="row">200 g</th>
-                                            <td>Doppelrahm Frischkäse</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Limettenzesten (Fett)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div
-                                class="tab-pane fade p-3"
-                                id="recept-cook"
-                                role="tabpanel"
-                                aria-labelledby="nav-profile-tab"
-                            >
-                                <p>Zubereitungszeit: 90 Minuten</p>
-                                <p>
-                                    1. Möhren schälen und grob raspeln. Walnüsse grob hacken. Eier
-                                    trennen. Eigelbe, 75 g Zucker und Zitronenschale mit den
-                                    Schneebesen des Handrührgrätes dick schaumig aufschlagen.
-                                    Möhrenraspel unterheben. Mehl, Mandeln und Walnüsse mischen,
-                                    unter die Eiercreme rühren. Eiweiß steif schlagen, Salz und 150
-                                    g Zucker dabei einrieseln lassen. Unter die Masse heben.
-                                </p>
-                                <p>
-                                    2. Masse in eine gefettete quadratische Springform (24 x 24 cm)
-                                    geben und glatt streichen. Im vorgeheizten Backofen (E-Herd: 175
-                                    °C/ Umluft: 150 °C/ Gas: s. Hersteller) ca. 50 Minuten backen.
-                                    Aus dem Ofen nehmen und auf einem Kuchengitter auskühlen lassen.
-                                </p>
-                                <p>
-                                    3. Kuchen aus der Form lösen. Mascarpone, Frischkäse,
-                                    Puderzucker und Limettenschale mit den Schneebesen des
-                                    Handrührgerätes aufschlagen. Auf den Kuchen geben und
-                                    verstreichen. Mit Limettenzesten bestreut servieren.
-                                </p>
-                            </div>
-                            <div
-                                class="tab-pane fade p-3"
-                                id="recept-mat"
-                                role="tabpanel"
-                                aria-labelledby="nav-contact-tab"
-                            >
-                                1 Stück ca. : 310 kcal | 1300 kJ | 8 g Eiweiß | 21 g Fett | 23 g
-                                Kohlenhydrate
+                                            <tr>
+                                                <th scope="row">200 g</th>
+                                                <td>Doppelrahm Frischkäse</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Limettenzesten (Fett)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div
+                                    class="tab-pane fade p-3 bg-white"
+                                    id="recept-cook2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav-profile-tab"
+                                >
+                                    <p>Zubereitungszeit: 90 Minuten</p>
+                                    <p>
+                                        1. Möhren schälen und grob raspeln. Walnüsse grob hacken.
+                                        Eier trennen. Eigelbe, 75 g Zucker und Zitronenschale mit
+                                        den Schneebesen des Handrührgrätes dick schaumig
+                                        aufschlagen. Möhrenraspel unterheben. Mehl, Mandeln und
+                                        Walnüsse mischen, unter die Eiercreme rühren. Eiweiß steif
+                                        schlagen, Salz und 150 g Zucker dabei einrieseln lassen.
+                                        Unter die Masse heben.
+                                    </p>
+                                    <p>
+                                        2. Masse in eine gefettete quadratische Springform (24 x 24
+                                        cm) geben und glatt streichen. Im vorgeheizten Backofen
+                                        (E-Herd: 175 °C/ Umluft: 150 °C/ Gas: s. Hersteller) ca. 50
+                                        Minuten backen. Aus dem Ofen nehmen und auf einem
+                                        Kuchengitter auskühlen lassen.
+                                    </p>
+                                    <p>
+                                        3. Kuchen aus der Form lösen. Mascarpone, Frischkäse,
+                                        Puderzucker und Limettenschale mit den Schneebesen des
+                                        Handrührgerätes aufschlagen. Auf den Kuchen geben und
+                                        verstreichen. Mit Limettenzesten bestreut servieren.
+                                    </p>
+                                </div>
+                                <div
+                                    class="tab-pane fade p-3 bg-white"
+                                    id="recept-mat2"
+                                    role="tabpanel"
+                                    aria-labelledby="nav-contact-tab"
+                                >
+                                    1 Stück ca. : 310 kcal | 1300 kJ | 8 g Eiweiß | 21 g Fett | 23 g
+                                    Kohlenhydrate
+                                </div>
                             </div>
                         </div>
+                        <!-- End table recept -->
                     </div>
                 </div>
-            </div>
-
+            </article>
             <!-- End recept -->
         </main>
+        <!-- footer -->
         <footer class="page-footer font-small bg-nav pt-4">
-            <div class="container-fluid text-center text-md-left mx-3">
+            <div class="text-center text-md-left mx-3">
                 <div class="row">
-                    <div class="col-md-9 mt-md-0 mt-3">
+                    <div class="col-md-6 mt-md-0 mt-3">
                         <h5 class="text-uppercase">Auf Wiedersehen</h5>
-                        <p class="w-75">
-                            Du hast es geschafft es freut mich das du da warst. Komm doch mal
+                        <p>
+                            Du hast es geschafft es freut mich das du da warst. <br />Komm doch mal
                             wieder. Hier gibt es dann garantiert nix neues.
                         </p>
                         <p class="lead">
@@ -324,9 +347,10 @@
                         </p>
                     </div>
 
+                    <div class="col-md-3 mb-md-0 mb-3"></div>
                     <div class="col-md-3 mb-md-0 mb-3">
                         <h5 class="text-uppercase">Maike Karotte</h5>
-                        <p>Am alten Acker 7<br />012345 In der Heide</p>
+                        <p>Am alten Acker 7 (Reihe 6)<br />012345 In der Heide</p>
                         <p>Tel.: 😩 echt jetzt, ich bin ne Karotte<br />E-Mail: siehe oben</p>
                     </div>
                 </div>
@@ -337,6 +361,7 @@
                 <a href="https://mdbootstrap.com/"> Maike Karotte</a>
             </div>
         </footer>
+        <!-- End footer -->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script
