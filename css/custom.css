@@ -9963,12 +9963,26 @@ h3 {
   border-radius: 0.25rem;
 }
 
-.cover-cake {
+.cover-cake,
+.cake1 {
   background-image: url("/images/recept.jpg");
 }
 
+.cake1,
+.cake2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+.cake2 {
+  background-image: url("/images/suppe.jpg");
+  border-radius: 0px 1rem 1rem 0px;
+}
+
 .rbox {
-  min-height: 450px;
+  min-height: 800px;
 }
 
 .recept-link {
