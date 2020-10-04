@@ -2,6 +2,7 @@
 // See node_modules/bootstrap/scss/_variables.scss for all variables
 $body-bg: #edf0c7;
 $border-radius: 1rem;
+$primary: black;
 
 // Add you custom CSS
 
@@ -12,7 +13,7 @@ $border-radius: 1rem;
 // Include all Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-// Eigene Regeln
+// general
 
 .bg-nav {
     background-color: #a6eb7f;
@@ -26,6 +27,18 @@ $border-radius: 1rem;
     background-color: #ff5c00;
 }
 
+// cover
+
+.cover-karotte {
+    background-image: url('/images/cover.jpg');
+}
+
+.txt-cover {
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+// Backround Images in Cards
+
 .cover-cake,
 .cover-karotte,
 .card--about-me__farmer,
@@ -36,14 +49,6 @@ $border-radius: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.cover-karotte {
-    background-image: url('/images/cover.jpg');
-}
-
-.txt-cover {
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
 }
 
 .card--about-me__villian {
@@ -81,18 +86,7 @@ $border-radius: 1rem;
     border-radius: 0.25rem;
 }
 
-.recept-table,
-.recept-table-l {
-    width: 45%;
-}
-
-.recept-table-l {
-    float: left;
-}
-
-.recept-txt {
-    color: white;
-}
+// recept specifications
 
 .cover-cake {
     background-image: url('/images/recept.jpg');
@@ -100,7 +94,6 @@ $border-radius: 1rem;
 
 .rbox {
     min-height: 450px;
-    border-radius: 0.25rem;
 }
 
 .recept-link {
@@ -109,4 +102,12 @@ $border-radius: 1rem;
 
 .recept-link:hover {
     color: black;
+}
+
+a[aria-selected='false'] {
+    background-color: white;
+}
+
+a[aria-selected='true'] {
+    font-weight: bold;
 }
