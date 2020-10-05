@@ -29,6 +29,10 @@ $primary: black;
 
 // cover
 
+// für Github Pages beachten:
+// absoluter Pfad beachten, Github Pages kann keine relativen Pfade verwenden
+// https://alexisroe.github.io/my-personal-portfolio
+
 .cover-karotte {
     background-image: url('https://alexisroe.github.io/my-personal-portfolio/images/cover.jpg');
 }
